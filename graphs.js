@@ -81,7 +81,7 @@ function draw_mark_node(x,y){
     context.strokeStyle = "Green";
     context.stroke();
 };
-function draw_edge(payload,color,parent_node,child_node,key) {
+function draw_edge(payload,color,parent_node,child_node) {
     context = document.getElementById(CANVAS_ID).getContext("2d");
     var centre_x = (child_node.node_x + parent_node.node_x) / 2;
     var centre_y = (child_node.node_y + parent_node.node_y) / 2;
